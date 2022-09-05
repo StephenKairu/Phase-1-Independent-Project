@@ -1,7 +1,6 @@
 body{
-    background-color: blueviolet;
+    background-color: rgb(34, 4, 61);
 }
-
 
 .header{
     padding:2rem 9%;
@@ -12,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:rgb(250, 246, 246);
+    background:rgb(61, 52, 63);
     height: 6%;
 }
 
@@ -27,7 +26,7 @@ body{
     justify-content: space-between;
 }
 .navbar a{
-    color:black;
+    color:white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -35,4 +34,13 @@ body{
 #logo {
     width: 20%;
     height: 20%;
+}
+.banner{
+    margin-top: 6%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1), goldenrod), url(./images/Barber1.jpg);
+    background-size: cover;
+    height: 100vh; */
+}
+.banner img{
+    width: 100%;
 }
