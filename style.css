@@ -57,23 +57,26 @@ body{
 
 #about {
     margin-top: 8%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(114, 87, 20)), url(./images/Barberseat.jpg);
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(51, 32, 63));
+    background-size: 50%;
     height: 100vh;
 }
 #about img{
-    background-size: cover;
-    height: 100vh;
+    width: 50%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #about h2{
+    padding-top: 2%;
     font-size: xx-large;
-    padding-top: 7%;
     text-align: center;
+    color: white;
 }
 #about div p{
     text-align: center;
     font-weight: 600;
-    padding-top: 12%;
     color: white;
 }
 
