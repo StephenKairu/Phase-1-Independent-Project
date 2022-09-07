@@ -57,7 +57,7 @@ body{
 
 #about {
     margin-top: 8%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(51, 32, 63));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(31, 11, 43));
     background-size: 50%;
     height: 100vh;
 }
@@ -145,7 +145,55 @@ h2{
 .activated-heart {
     color: red;
   }
-
+#reviews {
+    margin-bottom: 5%;
+}
 .card {
     background-color: white;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: ;
+}
+.form {
+    background-color: white;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding-bottom: 2%;
+}
+.form h3{
+    color: goldenrod;
+    background-color:rgb(23, 5, 39);
+    font-size: x-large;
+    border-radius: .5rem;
+    padding: 1%;
+}
+.review-input {
+    width: 300px;
+}
+button {
+    background-color: rgb(23, 5, 39);
+    color: white;
+    border-radius: .5rem;
+    padding: 2%;
+}
+button a:hover i{
+    padding-right:2rem;
+}
+.btn {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
