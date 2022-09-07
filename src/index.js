@@ -15,7 +15,40 @@
 //   .then(result => console.log(result))
 //   .catch(err => console.log(err))
 
-const container = document.querySelector(".container");
+
+const token = "https://api.cal.com/v1/?apiKey=cal_live_9c07def4dac49df388dfe742dfcf6209";
+const bookingAPI = "http://localhost:3002/v1/event-types";
+
+const booking = document.querySelector("#booking");
+let eventType;
+function getEventType(images) {
+   images.map(image => {
+     cardTag = `<div class="card">
+              <img src=${image.src.large} />
+         </div>`;
+     booking.innerHTML += cardTag;
+   })
+}
+fetch("http://localhost:3002/v1/event-types",{
+  headers: {
+    Authorization: "https://api.cal.com/v1/?apiKey=cal_live_9c07def4dac49df388dfe742dfcf6209"
+  }
+})
+   .then(resp => {
+     return resp.json()
+   })
+   .then(data => {
+     getEventType(data.photos);
+   })
+
+
+
+
+
+
+
+
+const container = document.querySelector("#container");
 let cardTag;
 function getHairPhotos(images) {
    images.map(image => {

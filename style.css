@@ -118,3 +118,19 @@ body{
     padding-right:2rem;
 }
 #hair-dye {
+}
+
+.display_images{
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:18px;
+}
+.display_images img 
+{
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    cursor: pointer;
+}
