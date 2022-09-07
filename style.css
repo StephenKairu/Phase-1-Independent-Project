@@ -145,3 +145,7 @@ h2{
 .activated-heart {
     color: red;
   }
+
+.card {
+    background-color: white;
+}
