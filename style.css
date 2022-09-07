@@ -68,11 +68,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-#about h2{
+h2{
     padding-top: 2%;
     font-size: xx-large;
     text-align: center;
-    color: white;
+    color: goldenrod;
+    text-decoration: underline;
 }
 #about div p{
     text-align: center;
@@ -95,8 +96,7 @@ body{
 }
 
 .footer .box-container .footer-links h3{
-    font-size: 2.5rem;
-    color:var(--black);
+    font-size: x-large;
     padding: 1rem 0;
     text-decoration: underline;
 }
