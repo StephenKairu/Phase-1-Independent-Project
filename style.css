@@ -4,7 +4,13 @@
 body{
     background-color: rgb(23, 5, 39);
 }
-
+a {
+    text-decoration: none;
+}
+#home {
+    text-decoration: underline;
+    color: goldenrod;
+}
 .header{
     padding:2rem 9%;
     position: fixed;
@@ -56,10 +62,10 @@ body{
 }
 
 #about {
-    margin-top: 8%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(31, 11, 43));
+    margin-top: 3%;
     background-size: 50%;
     height: 100vh;
+    margin-bottom: 8%;
 }
 #about img{
     width: 50%;
@@ -76,11 +82,127 @@ h2{
     text-decoration: underline;
 }
 #about div p{
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-weight: 600;
-    color: white;
+    color: black;
+    background-color: white;
+    width: 70%;
+    margin-bottom: 3%;
+    border-radius: .5rem;
+    padding: 1rem;
 }
 
+.prices {
+    font-size: large;
+    background-color: white;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+a i{
+    padding-right: .5rem;
+    color: goldenrod;
+}
+a:hover i{
+    padding-right:2rem;
+}
+
+.display_images{
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:18px;
+}
+.display_images img 
+{
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    cursor: pointer;
+}
+
+.like {
+    color: white;
+}
+.like-glyph {
+    cursor: pointer;
+  }
+
+.activated-heart {
+    color: red;
+  }
+#reviews {
+    margin-bottom: 5%;
+}
+.stars i{
+    color: rgb(236, 176, 24);
+    font-size: 1.5rem;
+}
+.card {
+    background-color: white;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: rgba(119, 4, 4, 0.35) 0px 5px 15px;
+}
+.form {
+    background-color: white;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding-bottom: 2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form h3{
+    color: goldenrod;
+    background-color:rgb(23, 5, 39);
+    font-size: x-large;
+    border-radius: .5rem;
+    padding: 1%;
+}
+.review-input {
+    width: 300px;
+}
+button {
+    background-color: rgb(23, 5, 39);
+    border-radius: .5rem;
+    padding: 2%;
+    cursor: pointer;
+    color: white;
+}
+button a:hover {
+    padding-right:2rem;
+    cursor: pointer;
+    background-color: ;
+}
+.btn {
+    margin-top: 20%;
+    margin-left: 3%;
+    color: goldenrod;
+    font-weight: 600;
+    background-color: rgb(23, 5, 39);
+}
 
 .footer {
     color: goldenrod;
@@ -116,84 +238,4 @@ h2{
 
 .footer .box-container .footer-links a:hover i{
     padding-right:2rem;
-}
-#hair-dye {
-}
-
-.display_images{
-    width: 80%;
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    grid-gap:18px;
-}
-.display_images img 
-{
-    width: 100%;
-    border-radius: 5px;
-    height: 70%;
-    cursor: pointer;
-}
-
-.like {
-    color: white;
-}
-.like-glyph {
-    cursor: pointer;
-  }
-
-.activated-heart {
-    color: red;
-  }
-#reviews {
-    margin-bottom: 5%;
-}
-.card {
-    background-color: white;
-    width: 70%;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: .5rem;
-    padding: 2rem;
-    box-shadow: ;
-}
-.form {
-    background-color: white;
-    width: 60%;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: .5rem;
-    padding-bottom: 2%;
-}
-.form h3{
-    color: goldenrod;
-    background-color:rgb(23, 5, 39);
-    font-size: x-large;
-    border-radius: .5rem;
-    padding: 1%;
-}
-.review-input {
-    width: 300px;
-}
-button {
-    background-color: rgb(23, 5, 39);
-    color: white;
-    border-radius: .5rem;
-    padding: 2%;
-}
-button a:hover i{
-    padding-right:2rem;
-}
-.btn {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }

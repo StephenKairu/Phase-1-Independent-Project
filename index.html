@@ -13,7 +13,7 @@
 
         <a href="#" class="logo"><img id="logo" src="./images/BarbershopLogo.jpg" alt="BarbershopLogo"></a>  
         <nav class="navbar">
-                <a href="#home">Home</a>
+                <a href="#home" id="home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>                 
                 <a href="#booking">Booking</a>
@@ -23,29 +23,31 @@
     
     </header>
     <section class="banner">
-        <a href="#booking"></a><button class="btn">Book Appointment</button></a>
+        <a href="#booking"><button class="btn">Book Appointment</button></a>
     </section>
     <section id="about">
         <div>
             <h2>Who we are:</h2>
             <img src="./images/Barberseat.jpg" alt="">
             <br>
+            <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores autem quis aliquam, sapiente ex sint voluptatum iusto pariatur, voluptate tenetur quidem eos vitae eveniet possimus fugiat maxime inventore cupiditate dolorum laboriosam earum praesentium a deleniti. Laboriosam asperiores eum odit ullam quaerat pariatur fugiat vero corporis dolores dicta ipsam excepturi molestias voluptate, eos, repellat quidem maiores sequi expedita eveniet tenetur. Autem, distinctio. Nihil quod repellat cumque minus expedita sed nulla dolores, dignissimos quasi enim ipsa incidunt voluptatum. Culpa fugit nemo doloribus blanditiis atque animi accusamus expedita. Et dignissimos est autem, commodi delectus ullam reiciendis, quisquam voluptatum officia suscipit placeat id!</p>
+            </div>
         </div>
     </section>
+    <hr>
     <section id="services" class="services">
+        <h2>Quality Services:</h2>
         <div>
-            Hair Cut - Ksh 1000
-            Beard Cut - Ksh 500
-            Hair & Beard - Ksh 1400
-            Dye - Ksh 800
+            <a href="#services" class="prices"> <i class="fas fa-chevron-right"></i> Hair Cut - Ksh 1000</a>
+            <a href="#services" class="prices"> <i class="fas fa-chevron-right"></i> Beard Cut - Ksh 600</a>
+            <a href="#services"class="prices"> <i class="fas fa-chevron-right"></i> Hair & Beard - Ksh 1500</a>
+            <a href="#services" class="prices"> <i class="fas fa-chevron-right"></i> Massage - Ksh 2500</a>
+            <a href="#services" class="prices"> <i class="fas fa-chevron-right"></i> Dye - Ksh 1000</a>
         </div>
         <div>
             <h2>Hair Styles</h2>
             <div class="display_images" id="container">
-                <!-- <div class="card">
-                    <img src="" />
-                 </div> --> 
             </div>
                 <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
         </div>
@@ -57,20 +59,20 @@
     <section id="booking">
         <div></div>
     </section>
+    <hr>
     <section id="reviews">
         <h2>Our Customers Say...</h2>
         <div id="reviews-container">
             <div class="review-card">
-                <!-- <h3 class="customer-name"></h3>
-                <p class="customer-review"></p> -->
             </div>
             <div class="form">
                 <h3>Satisfied with our service?</h3>
                 <form id="comment-form" class="comment-form">
-                    Name: <br><input type="text" name="name" placeholder="Your name?" class="name-input"> <br> <br>
+                    Name: <br><input type="text" name="name" placeholder="Your name?" id="client-name"> <br> <br>
                 Email: <br><input type="email" name="email" placeholder="Your email won't be published" class="email-input"> <br><br>
-                    Comment: <br><input type="text" name="body" placeholder="Leave a review?" class="review-input"> <br><br>
-                    <button type="submit" class="submit-button">Submit Review</button>
+                    Comment: <br>
+                    <textarea name="body" id="client-text" cols="30" rows="6" placeholder="Leave a review..."></textarea><br><br>
+                    <button type="submit" id="submit-button">Submit Review</button>
                 </form>
             </div>
         </div>    
