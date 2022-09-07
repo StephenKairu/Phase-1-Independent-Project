@@ -134,3 +134,14 @@ body{
     height: 70%;
     cursor: pointer;
 }
+
+.like {
+    color: white;
+}
+.like-glyph {
+    cursor: pointer;
+  }
+
+.activated-heart {
+    color: red;
+  }

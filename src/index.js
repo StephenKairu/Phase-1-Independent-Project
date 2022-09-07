@@ -54,6 +54,7 @@ function getHairPhotos(images) {
    images.map(image => {
      cardTag = `<div class="card">
               <img src=${image.src.large} />
+              <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
          </div>`;
      container.innerHTML += cardTag;
    })
@@ -77,6 +78,7 @@ function getPhotos(images) {
    images.map(image => {
      dyeTag = `<div class="card">
               <img src=${image.src.large} />
+              <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
          </div>`;
      hairDye.innerHTML += dyeTag;
    })
@@ -92,3 +94,22 @@ fetch("https://api.pexels.com/v1/search?query=hairdye",{
    .then(data => {
      getPhotos(data.photos);
    })
+
+
+
+   let EMPTY_HEART = '♡'
+   let FULL_HEART = '♥'
+
+   const errMessage = document.querySelector(".hidden");
+   const emptyHeart  = document.querySelectorAll(".like-glyph");
+   
+   emptyHeart.forEach((like) => {
+     like.addEventListener("click", (e) => {
+       if (like.innerHTML == EMPTY_HEART) {
+         like.innerHTML = FULL_HEART;
+         like.className = "activated-heart";
+       } else if (like.innerText == FULL_HEART) {
+         like.innerHTML = EMPTY_HEART;
+       }
+     });
+   });
