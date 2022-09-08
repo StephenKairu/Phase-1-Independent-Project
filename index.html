@@ -10,7 +10,6 @@
 </head>
 <body>
     <header class="header">
-
         <a href="#" class="logo"><img id="logo" src="./images/BarbershopLogo.jpg" alt="BarbershopLogo"></a>  
         <nav class="navbar">
                 <a href="#home" id="home">Home</a>
@@ -20,8 +19,10 @@
                 <a href="#reviews">Reviews</a>
                 <a href="#contactus">Contact Us</a>
         </nav>
-    
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+
     </header>
+
     <section class="banner">
         <a href="#booking"><button class="btn">Book Appointment</button></a>
     </section>
@@ -57,7 +58,7 @@
         <div id="hair-dye" class="display_images"></div>
     </section>
     <section id="booking">
-        <div></div>
+        <button id="book">Book Appointment</button>
     </section>
     <hr>
     <section id="reviews">
@@ -68,10 +69,10 @@
             <div class="form">
                 <h3>Satisfied with our service?</h3>
                 <form id="comment-form" class="comment-form">
-                    Name: <br><input type="text" name="name" placeholder="Your name?" id="client-name"> <br> <br>
-                Email: <br><input type="email" name="email" placeholder="Your email won't be published" class="email-input"> <br><br>
+                    Name: <br><input type="text" name="name" placeholder="Your name?" id="client-name" required> <br> <br>
+                Email: <br><input type="email" name="email" placeholder="Your email won't be published" class="email-input" required> <br><br>
                     Comment: <br>
-                    <textarea name="body" id="client-text" cols="30" rows="6" placeholder="Leave a review..."></textarea><br><br>
+                    <textarea name="body" id="client-text" cols="30" rows="6" placeholder="Leave a review..." required></textarea><br><br>
                     <button type="submit" id="submit-button">Submit Review</button>
                 </form>
             </div>

@@ -132,15 +132,56 @@ a:hover i{
 }
 
 .like {
-    color: white;
+    color: red;
 }
 .like-glyph {
     cursor: pointer;
   }
 
+.like-button {
+    /* color: white; */
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+/* strt */
+  /* .like-button {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+  } */
+  
+  .like-button:hover {
+    color: rgb(241, 71, 19);
+  }
+  
+  .like-button:active {
+    color: rgb(253, 159, 124);
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }   */
 .activated-heart {
     color: red;
   }
+
+#booking {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: aqua;
+}
+.schedular {
+    background-color: rgb(76, 214, 12);
+    width: 100%;
+}
+
 #reviews {
     margin-bottom: 5%;
 }
@@ -179,7 +220,9 @@ a:hover i{
     background-color:rgb(23, 5, 39);
     font-size: x-large;
     border-radius: .5rem;
+    width: 45%;
     padding: 1%;
+    text-align: center;
 }
 .review-input {
     width: 300px;
@@ -214,7 +257,7 @@ button a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     gap:2rem;
-    /* background-color: rgb(23, 5, 39); */
+    background-color: rgb(23, 5, 39);
 }
 
 .footer .box-container .footer-links h3{
@@ -239,3 +282,4 @@ button a:hover {
 .footer .box-container .footer-links a:hover i{
     padding-right:2rem;
 }
+
