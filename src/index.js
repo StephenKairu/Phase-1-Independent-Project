@@ -5,7 +5,7 @@ function getHairPhotos(images) {
    images.map(image => {
      cardTag = `<div class="image-div">
               <img src=${image.src.large} />
-              <p class="like">Like! <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
+              <p class="like">Like <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
          </div>`;
      container.innerHTML += cardTag;
    })
@@ -30,7 +30,7 @@ function getPhotos(images) {
    images.map(image => {
      dyeTag = `<div class="image-div">
               <img src=${image.src.large} />
-              <p class="like">Like! <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
+              <p class="like">Like <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
          </div>`;
      hairDye.innerHTML += dyeTag;
    })
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <h3>My Name is ${review.name}</h3>
       <p>${review.body}</p>
-      <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
+      <p class="like">Like <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
       `
       document.querySelector(".review-card").appendChild(card)
     }
