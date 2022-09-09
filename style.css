@@ -130,6 +130,9 @@ a:hover i{
     height: 70%;
     cursor: pointer;
 }
+#dye {
+    margin-top: 2%;
+}
 
 .like {
     color: white;
