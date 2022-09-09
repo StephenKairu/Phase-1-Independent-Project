@@ -65,12 +65,12 @@ fetch("https://api.pexels.com/v1/search?query=hairdye",{
    });
 
 
-const like = document.getElementById('like-button');
+// const like = document.getElementById('like-button');
 
-like.addEventListener('click', function onClick(event) {
-  // 👇️ Change text color globally
-  event.target.style.color = 'red';
-});
+// like.addEventListener('click', function onClick(event) {
+//   // Change text color globally
+//   event.target.style.color = 'red';
+// });
 
 
 
@@ -130,31 +130,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-function displayCal(data) {
+// Fetching from CalCom API
+// function displayCal(data) {
  
-  let calendar = document.createElement('div')
-  calendar.className = 'schedular'
-  calendar.innerHTML = JSON.stringify(data)
+//   let calendar = document.createElement('div')
+//   calendar.className = 'schedular'
+//   calendar.innerHTML = JSON.stringify(data)
 
 
-  document.querySelector("#booking").appendChild(calendar)
-}
-document.getElementById("book").addEventListener('click', getCal)
-function init() {
-  getCal()
-}
-init()
+//   document.querySelector("#booking").appendChild(calendar)
+// }
+// document.getElementById("book").addEventListener('click', getCal)
+// function init() {
+//   getCal()
+// }
+// init()
 
-function getCal() {
-  fetch("https://api.cal.com/v1/event-types?apiKey=9c07def4dac49df388dfe742dfcf6209")
-  .then(resp => {
-    return resp.json()
-  })
-  .then(data => {
-    console.log((data));
-    displayCal(data)
-  })
-}
+// function getCal() {
+//   fetch("https://api.cal.com/v1/event-types?apiKey=9c07def4dac49df388dfe742dfcf6209")
+//   .then(resp => {
+//     return resp.json()
+//   })
+//   .then(data => {
+//     console.log((data));
+//     displayCal(data)
+//   })
+// }
 
