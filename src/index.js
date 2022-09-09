@@ -1,10 +1,11 @@
+// Fetch and display haircuts images
 const container = document.querySelector("#container");
 let cardTag;
 function getHairPhotos(images) {
    images.map(image => {
      cardTag = `<div class="image-div">
               <img src=${image.src.large} />
-               <button id="like-button" class="like-button">♥</button>
+              <p class="like">Like! <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
          </div>`;
      container.innerHTML += cardTag;
    })
@@ -22,13 +23,14 @@ fetch("https://api.pexels.com/v1/search?query=barbershop",{
    })
 
 
-   const hairDye = document.querySelector("#hair-dye");
+// Fetch and display hair-dye images
+const hairDye = document.querySelector("#hair-dye");
 let dyeTag;
 function getPhotos(images) {
    images.map(image => {
      dyeTag = `<div class="image-div">
               <img src=${image.src.large} />
-              <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
+              <p class="like">Like! <span class="like-glyph" onClick=likeItem()>&#x2661;</span></p>
          </div>`;
      hairDye.innerHTML += dyeTag;
    })
@@ -46,34 +48,24 @@ fetch("https://api.pexels.com/v1/search?query=hairdye",{
    })
 
 
+  // Image Like Functionality 
+let EMPTY_HEART = '♡'
+let FULL_HEART = '♥'
 
-   let EMPTY_HEART = '♡'
-   let FULL_HEART = '♥'
-
-   const errMessage = document.querySelector(".hidden");
-   const emptyHeart  = document.querySelectorAll(".like-glyph");
-   
-   emptyHeart.forEach((like) => {
-     like.addEventListener("click", (e) => {
-       if (like.innerHTML == EMPTY_HEART) {
-         like.innerHTML = FULL_HEART;
-         like.className = "activated-heart";
-       } else if (like.innerText == FULL_HEART) {
-         like.innerHTML = EMPTY_HEART;
-       }
-     });
-   });
+const likeItem = (e) => {
+  e = e || window.event
+  console.log({e});
+ let like = e.target;
+  if (like.innerHTML == EMPTY_HEART) {
+    like.innerHTML = FULL_HEART;
+    like.className = "activated-heart";
+  } else if (like.innerText == FULL_HEART) {
+    like.innerHTML = EMPTY_HEART;
+  }
+}
 
 
-// const like = document.getElementById('like-button');
-
-// like.addEventListener('click', function onClick(event) {
-//   // Change text color globally
-//   event.target.style.color = 'red';
-// });
-
-
-
+// Reviews function
 function addReview(event) {
   event.preventDefault()
 
