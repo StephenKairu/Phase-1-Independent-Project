@@ -74,93 +74,66 @@ like.addEventListener('click', function onClick(event) {
 
 
 
-// function addReview(event) {
-//   event.preventDefault()
+function addReview(event) {
+  event.preventDefault()
 
-//   let clientName= document.getElementById("client-name");
-//   let clientText= document.getElementById("client-text");
+  let clientName= document.getElementById("client-name");
+  let clientText= document.getElementById("client-text");
 
-//   let card = document.createElement('div')
-//   card.className = 'card'
-//   card.innerHTML = `
-//   <div class="stars">
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star"></i>
-//       <i class="fas fa-star-half-alt"></i>
-//   </div>
-//   <h3>My Name is ${clientName.value}</h3>
-//   <p>${clientText.value}</p>
-//   `
-//   document.querySelector(".review-card").appendChild(card)
-// }
-// document.getElementById("comment-form").addEventListener("submit", addReview)
+  let card = document.createElement('div')
+  card.className = 'card'
+  card.innerHTML = `
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+  </div>
+  <h3>My Name is ${clientName.value}</h3>
+  <p>${clientText.value}</p>
+  `
+  document.querySelector(".review-card").appendChild(card)
+}
+document.getElementById("comment-form").addEventListener("submit", addReview)
 
-// document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-//     function renderOneReview(review) {
-//       let card = document.createElement('div')
-//       card.className = 'card'
-//       card.innerHTML = `
-//       <div class="stars">
-//           <i class="fas fa-star"></i>
-//           <i class="fas fa-star"></i>
-//           <i class="fas fa-star"></i>
-//           <i class="fas fa-star"></i>
-//           <i class="fas fa-star-half-alt"></i>
-//       </div>
-//       <h3>My Name is ${review.name}</h3>
-//       <p>${review.body}</p>
-//       <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
-//       `
-//       document.querySelector(".review-card").appendChild(card)
-//     }
+    function renderOneReview(review) {
+      let card = document.createElement('div')
+      card.className = 'card'
+      card.innerHTML = `
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3>My Name is ${review.name}</h3>
+      <p>${review.body}</p>
+      <p class="like">Like! <span class="like-glyph">&#x2661;</span></p>
+      `
+      document.querySelector(".review-card").appendChild(card)
+    }
 
-//     function renderAllReviews() {
-//       fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
-//         .then((response) => response.json())
-//         .then((comments) => comments.forEach(review => renderOneReview(review)));
-//       }
-//     function init() {
-//       renderAllReviews()
-//     }
-//     init()
-//   })
-
-
+    function renderAllReviews() {
+      fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+        .then((response) => response.json())
+        .then((comments) => comments.forEach(review => renderOneReview(review)));
+      }
+    function init() {
+      renderAllReviews()
+    }
+    init()
+  })
 
 
-
-// later
-
-//   .then(response => response.json())
-//   .then(result => console.log(result))
-//   .catch(err => console.log(err))
-
-
-// const token = "https://api.cal.com/v1/?apiKey=cal_live_9c07def4dac49df388dfe742dfcf6209";
-// const bookingAPI = "http://localhost:3002/v1/event-types";
-
-// const booking = document.querySelector("#booking");
-// let eventType;
-// function getEventType(images) {
-//    images.map(image => {
-//      cardTag = `<div class="card">
-//               <img src=${image.src.large} />
-//          </div>`;
-//      booking.innerHTML += cardTag;
-//    })
-// }
 
 
 
 function displayCal(data) {
-  // data.preventDefault()
-
-  // let clientName= document.getElementById("client-name");
-  // let clientText= document.getElementById("client-text");
-
+ 
   let calendar = document.createElement('div')
   calendar.className = 'schedular'
   calendar.innerHTML = JSON.stringify(data)
