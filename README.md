@@ -6,11 +6,11 @@
 ## Table of Content
 
 + [Description](#description)
-+ [Installation Requirement](#Installation)
++ [Installation](#installation)
 + [Technology Used](#technology-used)
 + [Reference](#reference)
 + [Licence](#licence)
-+ [Authors Info](#author-Info)
++ [Authors Info](#authors-info)
 
 ## Description
 <p>This is a single-page website application that allows users to view empty time-slots to book in advance appointments for a service in a barbershop at their most suitable time. Users are also able to view images of various hairstyles, the staff at work and add their comments and reviews of the service directly on the page.</p>
@@ -27,7 +27,7 @@
 
 ### Installation Process
 
-[Go Back to the top](# Barbershop Appointment Booking WebApp)
+[Go Back to the top](#barbershop-appointment-booking-webapp)
 ## Technology Used
 * HTML - which was used to build the structure of the pages.
 
@@ -40,7 +40,7 @@
 ## Reference
 * Materialize CSS
 
-[Go Back to the top](# Barbershop Appointment Booking WebApp)
+[Go Back to the top](#barbershop-appointment-booking-webapp)
 
 ## Licence
 
@@ -66,7 +66,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Go Back to the top](# Barbershop Appointment Booking WebApp)
+[Go Back to the top](#barbershop-appointment-booking-webapp)
 
 ## Authors Info
 
@@ -74,4 +74,4 @@ Email - [Stephen Kairu](kairunjoroge1@gmail.com)
 
 LinkedIn - [Stephen Kairu](https://www.linkedin.com/in/stephen-kairu-54a4bb17a/)
 
-[Go Back to the top](# Barbershop Appointment Booking WebApp)
+[Go Back to the top](#barbershop-appointment-booking-webapp)
