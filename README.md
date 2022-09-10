@@ -1,7 +1,7 @@
 # Barbershop Appointment Booking WebApp
 
 ##### By Stephen Kairu 
-### It is a description of my Barbershop Appointment Booking WebApp project.
+### This is a description of my Barbershop Appointment Booking WebApp project.
 
 ## Table of Content
 
@@ -14,6 +14,8 @@
 
 ## Description
 <p>This is a single-page website application that allows users to view empty time-slots to book in advance appointments for a service in a barbershop at their most suitable time. Users are also able to view images of various hairstyles, the staff at work and add their comments and reviews of the service directly on the page.</p>
+
+[Live Demo Link](https://stephenkairu.github.io/Phase-1-Independent-Project/)
 
 ## Installation
 
@@ -33,7 +35,7 @@
 
 * Javascript - which was used to add interactivity to the website.
 
-* It has incorporated fetching ofthe sample images and comments from public APIs i.e. Pexels and jsonplaceholder.
+* It has incorporated fetching of the sample images and comments from public APIs i.e. Pexels and jsonplaceholder.
 
 ## Reference
 * Materialize CSS
